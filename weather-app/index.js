@@ -12,7 +12,7 @@ const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 async function checkWeather(city) {
   const resposne = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
-  if (resposne.status === 404) {
+  if (resposne.status == 404) {
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weathers").style.display = "none";
   } else {
