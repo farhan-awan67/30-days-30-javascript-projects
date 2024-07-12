@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.599);
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px 20px;
+  background: linear-gradient(pink, green);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.top input {
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.7em 0.8em;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.top i {
+  font-size: 20px;
+  background-color: white;
+  padding: 0.6em 0.7em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.top .srch-img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 0.8em 0.9em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.srch-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cloud-img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.cloud-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .temperature {
+  font-size: 80px;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.card .city-name {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.bottom .left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.info h2 {
+  color: white;
+  margin-top: 5px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.info p {
+  font-size: 20px;
+  color: white;
+}
+
+.right img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.weathers {
+  display: none;
+}
+
+.error {
+  display: none;
+  font-size: 19px;
+  color: white;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 5%;
+}
