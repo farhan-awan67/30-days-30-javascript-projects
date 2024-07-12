@@ -7,7 +7,7 @@ let srchBtn = document.getElementById("btn");
 let weather = document.getElementById("img");
 
 const apiKey = "00564f1f3c4d158c05cd060debb4520c";
-const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 async function checkWeather(city) {
   const resposne = await fetch(apiUrl + city + `&appid=${apiKey}`);
