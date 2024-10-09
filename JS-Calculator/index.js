@@ -8,6 +8,8 @@ btns.addEventListener("click", (e) => {
   } else if (currentValue === "=") {
     let result = eval(display.value);
     display.value = result;
+  } else if (currentValue === "⌫") {
+    display.value = display.value.slice(0, -1);
   } else {
     display.value += currentValue;
   }
