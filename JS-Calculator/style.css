@@ -7,7 +7,11 @@
 
 html,
 body {
+<<<<<<< HEAD
   width: 100%;
+=======
+ width: 100%;
+>>>>>>> c77922cfc6b629eb59dc6c42439e109cbfd0c3a7
   height: 100vh;
   display: flex;
   justify-content: center;
