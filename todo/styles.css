@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid white;
+    border-radius: .1rem;
+}
+
+.header input{
+    flex-grow: 1;
+    border:  none;
+    outline: none;
+    padding: .4rem;
+    background-color: transparent;
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+
+.header .add-todo{
+    padding: .5rem .5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: .1rem;
+    font-size: .8rem ;
+    font-weight: 700;
+}
+
+ul{
+    list-style-type: none;
+    color: white;
+    padding: .4rem;
+    margin: .4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul li{
+    margin: .3rem 0;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+li.checked{
+    text-decoration: line-through;
+}
+
+li .delete-btn,.cmplt-btn{
+    background-color: wheat;
+    color: black;
+    border-radius: .3rem;
+    padding: .3rem .7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
